@@ -1,7 +1,7 @@
-#This is a book management api
+###This is a book management api
 
 
-#User routes
+##User routes
 
 /*** Registeration ***/
 method: POST
@@ -23,7 +23,7 @@ JSON body
     password: "asdf",
 }
 
-#Book routes
+##Book routes
 
 /*** get single book ***/
 method: GET
@@ -65,4 +65,16 @@ JSON body
 /*** delete a book ***/
 method: DELETE
 URL: http://localhost:8080/api/books/:id
+
+##Order routes
+
+/*** add orders ***/
+method: POST
+URL: http://localhost:8080/api/order
+JSON body 
+{
+    userID: "fvshdfiebrgv874v1",
+    bookID: ["dfiebrgv874","dfiebrgv874","461gedfiebrgv874"],
+    totalAmount: 760,
+}
 
